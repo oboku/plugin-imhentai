@@ -1,0 +1,11 @@
+{
+  "name": "@oboku/plugin-imhentai-back",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@oboku/plugin-back": "^0.0.4"
+  }
+}
