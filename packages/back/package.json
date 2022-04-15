@@ -3,12 +3,21 @@
   "private": false,
   "version": "0.0.2",
   "scripts": {
-    "build": "tsc",
+    "build": "npx webpack --config webpack.config.js",
     "prepublishOnly": "npm run build"
   },
-  "devDependencies": {
-    "@oboku/plugin-back": "^0.0.4",
-    "typescript": "^4.6.3"
+  "peerDependencies": {
+    "@oboku/plugin-back": "^0.0.5"
   },
-  "gitHead": "5be6b6db97fc180f985cdc80f536cf92d340883b"
+  "devDependencies": {
+    "@oboku/plugin-back": "^0.0.5",
+    "@types/jest": "^27.4.1",
+    "@types/request": "^2.48.8",
+    "jest": "^27.5.1",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "gitHead": "daf54dfbd867fc4788a7e67d524bb8b5e7abab4c"
 }

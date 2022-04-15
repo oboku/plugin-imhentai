@@ -1,5 +1,5 @@
-import { dataSourceHelpers, LinkDocType } from "@oboku/shared/src"
-import { TYPE, UNIQUE_RESOURCE_IDENTIFIER } from "../shared/constants"
+import { dataSourceHelpers, LinkDocType } from "@oboku/shared"
+import { UNIQUE_RESOURCE_IDENTIFIER, TYPE } from "../../../shared/constants"
 import { plugin } from "./index"
 
 it(`should retrieve metadata`, async () => {
