@@ -7,6 +7,8 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@oboku/plugin-back": "^0.0.4"
-  }
+    "@oboku/plugin-back": "^0.0.4",
+    "typescript": "^4.6.3"
+  },
+  "gitHead": "5be6b6db97fc180f985cdc80f536cf92d340883b"
 }
