@@ -21,4 +21,4 @@ jobs:
           npm install
       - name: Publish
         run: |
-          npx lerna publish --yes
+          lerna publish --yes
