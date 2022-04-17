@@ -1,7 +1,7 @@
 {
   "name": "@oboku/plugin-imhentai-shared",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "scripts": {
     "build-types": "tsc --declaration --noEmit false --emitDeclarationOnly",
