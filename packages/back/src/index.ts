@@ -1,5 +1,5 @@
 import { DataSourcePlugin, dataSourceHelpers, cheerio, fetch } from "@oboku/plugin-back"
-import { UNIQUE_RESOURCE_IDENTIFIER, BASE_URI, TYPE } from "../../../shared/constants"
+import { UNIQUE_RESOURCE_IDENTIFIER, BASE_URI, TYPE } from "@oboku/plugin-imhentai-shared"
 
 export const plugin: DataSourcePlugin = {
   type: TYPE,

@@ -1,5 +1,5 @@
 import { dataSourceHelpers, LinkDocType } from "@oboku/shared"
-import { UNIQUE_RESOURCE_IDENTIFIER, TYPE } from "../../../shared/constants"
+import { UNIQUE_RESOURCE_IDENTIFIER, TYPE } from "@oboku/plugin-imhentai-shared"
 import { plugin } from "./index"
 
 it(`should retrieve metadata`, async () => {

@@ -1,21 +1,14 @@
 {
-  "name": "@oboku/plugin-imhentai-back",
+  "name": "@oboku/plugin-imhentai-shared",
   "private": false,
-  "main": "dist/index.js",
   "version": "0.0.4",
+  "main": "dist/index.js",
   "scripts": {
     "build-types": "tsc --declaration --noEmit false --emitDeclarationOnly",
     "build": "npx webpack --config webpack.config.js && npm run build-types",
     "prepublishOnly": "npm run build"
   },
-  "dependencies": {
-    "@oboku/plugin-imhentai-shared": "0.0.4"
-  },
-  "peerDependencies": {
-    "@oboku/plugin-back": "^0.0.5"
-  },
   "devDependencies": {
-    "@oboku/plugin-back": "^0.0.5",
     "@types/jest": "^27.4.1",
     "@types/request": "^2.48.8",
     "jest": "^27.5.1",
