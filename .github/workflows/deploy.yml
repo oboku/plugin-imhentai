@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.4
-        with:
-          node-version: "14"
+        uses: actions/setup-node
+        # with:
+          # node-version: "14"
       - uses: actions/checkout@v2
       - name: Install nodejs dependencies
         run: |
