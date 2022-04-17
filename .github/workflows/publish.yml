@@ -1,0 +1,21 @@
+name: publish
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - uses: actions/checkout@v3
+      - name: Install nodejs dependencies
+        run: |
+          npm install
+      - name: Publish
+        run: |
+          lerna publish --yes
