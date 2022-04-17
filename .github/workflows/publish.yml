@@ -18,4 +18,5 @@ jobs:
           npm install
       - name: Publish
         run: |
+          lerna version --yes
           lerna publish --yes
