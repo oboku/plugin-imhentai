@@ -6,17 +6,18 @@ module.exports = {
   entry: {
     index: `./src/index.tsx`
   },
-  mode: IS_PROD ? `production` : `development`,
-  ...!IS_PROD && {
-    devtool: `source-map`
-  },
   externals: [
     `react`,
     `react-dom`,
     /^@material-ui\/.+$/,
     /^@oboku\/.+$/
   ],
+  ...!IS_PROD && {
+    devtool: `source-map`,
+    mode: `development`
+  },
   ...IS_PROD && {
+    mode: `production`,
     optimization: {
       minimize: true
     }
@@ -36,7 +37,7 @@ module.exports = {
       },
       {
         test: /\.(jpg|png|svg)$/,
-        loader: "url-loader",
+        loader: `url-loader`,
         options: {
           limit: Infinity // everything
         }
@@ -48,7 +49,8 @@ module.exports = {
   },
   output: {
     filename: `[name].js`,
-    path: path.resolve(__dirname, `dist/front`),
-    libraryTarget: `commonjs`
+    path: path.resolve(__dirname, `dist`),
+    libraryTarget: `commonjs`,
+    clean: true
   }
 }

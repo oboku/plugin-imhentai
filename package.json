@@ -1,6 +1,9 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "build:dev": "NODE_ENV=development npx lerna run build"
+  },
   "devDependencies": {
     "lerna": "^4.0.0"
   }

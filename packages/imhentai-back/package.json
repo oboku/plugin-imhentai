@@ -12,10 +12,10 @@
     "@oboku/plugin-imhentai-shared": "^0.0.9"
   },
   "peerDependencies": {
-    "@oboku/plugin-back": "^0.0.5"
+    "@oboku/plugin-back": "^0.0.9"
   },
   "devDependencies": {
-    "@oboku/plugin-back": "^0.0.5",
+    "@oboku/plugin-back": "^0.0.9",
     "@types/jest": "^27.4.1",
     "@types/request": "^2.48.8",
     "jest": "^27.5.1",
@@ -24,5 +24,5 @@
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2"
   },
-  "gitHead": "32f8253ef36935740f8178693390aa232d5b7d7a"
+  "gitHead": "69a7f0d6e4708171ba99f5b57646526e1efc4cc4"
 }
