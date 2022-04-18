@@ -1,0 +1,53 @@
+{
+  "name": "@oboku/plugin-imhentai-front",
+  "version": "0.0.7",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "start": "concurrently -n front,back \"npm run start:front\" \"npm run start:back\"",
+    "start:front": "concurrently -n src,types \"npm run start-src:front\" \"npm run start-types:front\"",
+    "start-src:front": "webpack build --config ./webpack.config.js --watch",
+    "start-types:front": "tsc -w --project tsconfig.json --preserveWatchOutput --declaration --noEmit false --emitDeclarationOnly",
+    "build": "concurrently -n front \"npm run build:front\"",
+    "build:front": "concurrently -n src,types \"npm run build-src:front\" \"npm run build-types:front\"",
+    "build-src:front": "webpack build --config ./webpack.config.js",
+    "build-types:front": "tsc --project tsconfig.json --declaration --noEmit false --emitDeclarationOnly",
+    "lint": "eslint '**/*.{js,ts,tsx}'",
+    "tsc": "concurrently -n front,back \"npm run tsc:front\" \"npm run tsc:back\"",
+    "tsc:front": "tsc --project tsconfig.json",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "@oboku/plugin-front": "0.0.9",
+    "@types/react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.16.0",
+    "@oboku/plugin-back": "0.0.1",
+    "@oboku/plugin-front": "0.0.9",
+    "@types/jest": "^27.0.3",
+    "@types/react-dom": "^17.0.15",
+    "@types/react": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "concurrently": "^7.0.0",
+    "eslint": "^7.11.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "jest": "26.6.0",
+    "ts-loader": "^8.2.0",
+    "typescript": "*",
+    "url-loader": "4.1.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "@oboku/plugin-imhentai-shared": "^0.0.7"
+  }
+}
