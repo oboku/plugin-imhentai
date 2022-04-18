@@ -18,7 +18,8 @@
     "lint": "eslint '**/*.{js,ts,tsx}'",
     "tsc": "concurrently -n front,back \"npm run tsc:front\" \"npm run tsc:back\"",
     "tsc:front": "tsc --project tsconfig.json",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "@oboku/plugin-front": "0.0.9",
