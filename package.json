@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "build:dev": "NODE_ENV=development npx lerna run build",
-    "publish:prod": "NODE_ENV=production npx lerna publish"
+    "publish:prod": "NODE_ENV=production npx lerna publish",
+    "check:version": "npx lerna exec --no-bail \"pwd && npm outdated\" && npm outdated"
   },
   "devDependencies": {
     "lerna": "^4.0.0"

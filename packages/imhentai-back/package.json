@@ -12,10 +12,10 @@
     "@oboku/plugin-imhentai-shared": "^0.0.10"
   },
   "peerDependencies": {
-    "@oboku/plugin-back": "^0.0.9"
+    "@oboku/plugin-back": "^0.0.14"
   },
   "devDependencies": {
-    "@oboku/plugin-back": "^0.0.9",
+    "@oboku/plugin-back": "^0.0.14",
     "@types/jest": "^27.4.1",
     "@types/request": "^2.48.8",
     "jest": "^27.5.1",
