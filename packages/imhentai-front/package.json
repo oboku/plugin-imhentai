@@ -50,5 +50,6 @@
   },
   "dependencies": {
     "@oboku/plugin-imhentai-shared": "^0.0.8"
-  }
+  },
+  "gitHead": "32f8253ef36935740f8178693390aa232d5b7d7a"
 }

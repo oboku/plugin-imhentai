@@ -4,7 +4,7 @@ import { UNIQUE_RESOURCE_IDENTIFIER, BASE_URI, TYPE } from "@oboku/plugin-imhent
 export const plugin: DataSourcePlugin = {
   type: TYPE,
   download: async () => {
-    throw new Error(`Not implemented`)
+    throw new Error(`Not implemented!`)
   },
   getMetadata: async (link) => {
     const galleryId = dataSourceHelpers.extractIdFromResourceId(UNIQUE_RESOURCE_IDENTIFIER, link.resourceId)
