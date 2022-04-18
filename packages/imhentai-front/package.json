@@ -1,6 +1,6 @@
 {
   "name": "@oboku/plugin-imhentai-front",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "dist/index.js",
   "license": "MIT",
   "files": [
@@ -49,7 +49,7 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
-    "@oboku/plugin-imhentai-shared": "^0.0.8"
+    "@oboku/plugin-imhentai-shared": "^0.0.9"
   },
   "gitHead": "32f8253ef36935740f8178693390aa232d5b7d7a"
 }
