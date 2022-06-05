@@ -1,6 +1,6 @@
 import { generateResourceId, ObokuPlugin, yup } from "@oboku/plugin-front"
 import { useState } from 'react'
-import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField, Typography } from '@material-ui/core'
+import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField, Typography } from '@mui/material'
 import { UNIQUE_RESOURCE_IDENTIFIER } from "@oboku/plugin-imhentai-shared"
 
 const schema = yup.object().shape({

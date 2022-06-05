@@ -21,10 +21,16 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "@oboku/plugin-front": "0.0.9",
+    "@oboku/plugin-front": "0.8.0",
     "@types/react-dom": "^17.0.0"
   },
   "devDependencies": {
+    "@oboku/shared": "0.6.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.x",
+    "@mui/lab": "^5.0.0-alpha.84",
+    "@mui/material": "5.8.x",
     "@babel/preset-typescript": "^7.16.0",
     "@oboku/plugin-front": "0.0.9",
     "@types/jest": "^27.0.3",
