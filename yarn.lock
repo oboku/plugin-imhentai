@@ -1577,6 +1577,11 @@
   resolved "https://registry.yarnpkg.com/@oboku/plugin-front/-/plugin-front-0.0.9.tgz#1e64633061a14d49793b5c4beb77bb3438254e9d"
   integrity sha512-fTV13HkSzITovNU8N0a3RnqBZ6pF8uQ3jf3KgL4hiFdY18bRekCpJ4j+I3KFntBSiQhtyP+6au56wefPampWww==
 
+"@oboku/shared@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@oboku/shared/-/shared-0.6.0.tgz#649821a5d8e55982bf65365417b4494ce8d91072"
+  integrity sha512-qv0Z6ekk5xmfjLNjNnEtVC1ZO3zNHcXZdbhcURMIWEkW1pfc6RIieU8fyo82Ouf/aar0AqGar9GIIc/P0EYoDQ==
+
 "@octokit/auth-token@^2.4.4":
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/@octokit/auth-token/-/auth-token-2.5.0.tgz#27c37ea26c205f28443402477ffd261311f21e36"
