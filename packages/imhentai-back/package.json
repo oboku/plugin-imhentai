@@ -12,13 +12,17 @@
     "@oboku/plugin-imhentai-shared": "^0.0.10"
   },
   "peerDependencies": {
-    "@oboku/plugin-back": "^0.7.x"
+    "@oboku/plugin-back": "^0.8.x"
   },
   "devDependencies": {
-    "@oboku/plugin-back": "^0.7.0",
+    "@oboku/plugin-back": "^0.8.0",
     "@types/jest": "^27.4.1",
     "@types/request": "^2.48.8",
+    "cheerio": "^1.0.0-rc.11",
     "jest": "^27.5.1",
+    "nano": "^10.0.0",
+    "node-fetch": "^3.2.0",
+    "request": "^2.88.2",
     "ts-loader": "^9.2.8",
     "typescript": "^4.6.3",
     "webpack": "^5.72.0",
