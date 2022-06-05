@@ -1,6 +1,6 @@
 {
   "name": "@oboku/plugin-imhentai-front",
-  "version": "0.0.10",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "license": "MIT",
   "files": [
@@ -24,14 +24,14 @@
     "@oboku/plugin-front": "0.8.0"
   },
   "devDependencies": {
-    "@oboku/shared": "0.6.0",
+    "@babel/preset-typescript": "^7.16.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.8.x",
     "@mui/lab": "^5.0.0-alpha.84",
     "@mui/material": "5.8.x",
-    "@babel/preset-typescript": "^7.16.0",
     "@oboku/plugin-front": "0.0.9",
+    "@oboku/shared": "0.6.0",
     "@types/jest": "^27.0.3",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
@@ -50,7 +50,7 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
-    "@oboku/plugin-imhentai-shared": "^0.0.10"
+    "@oboku/plugin-imhentai-shared": "^0.1.0"
   },
   "gitHead": "69a7f0d6e4708171ba99f5b57646526e1efc4cc4"
 }
